@@ -26,6 +26,6 @@ This project is a web-based typing practice application designed to improve typi
 ## Setup
 1. Clone the repository:
    ```bash
-   git clone <repository-url>
+   git clone https://github.com/FuatKarakaya/10-fast-fingers-practice-site.git
    ```
 2. Open `index.html` in your browser to start the application.
