@@ -1,0 +1,174 @@
+
+body{
+	font-family: 'Baloo Tammudu 2', cursive;
+}
+.container{
+	height: 100vh;
+	padding:9px 0 0 9px;
+}
+#top{
+	display: inline-flex;
+
+}
+#bottom{
+	display: inline-flex;
+}
+#label{
+	font-size: 20px;
+	line-height:0px;
+}
+input{
+	height: 40px;
+	width:300px;
+	background-color: white;
+	border: 2px solid #38b6e0;
+	border-radius: 5px;
+}
+
+.inputRadio{
+	display: none;
+}
+label{
+	display: inline-block;
+	margin-left: 20px;
+	position: relative;
+	vertical-align: middle;
+	cursor: pointer;
+}
+label span{
+	display: block;
+	height: 10px; /*dıştaki daire*/
+	width:  10px;
+	border-radius: 50%;
+	border:2px solid #38b6e0;
+	position: absolute;
+	left: -20px;
+	top: 7px;
+}
+label span:after{
+	content: "";
+	height: 8px;
+	width: 8px;
+	background-color: #38b6e0;
+	display: block;
+	position:absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%,-50%) scale(0);
+	border-radius: 50%;
+	transition: 300ms ease-in-out 0s;
+}
+.inputRadio:checked ~ span:after{
+	transform: translate(-50%,-50%) scale(1);
+}
+#radioDiv{
+	margin-left:15px;
+	padding-top: 9px;
+}
+#enter{
+	margin: 0px 5px 0px 5px;
+	transition: all 200ms;
+	width: 56px;
+	height:46px;
+	border:solid 2px #38b6e0;
+	background-color: white;
+	border-radius: 5px;
+	color: #38b6e0;
+}
+#enter:hover{
+	border-radius: 11px;
+	background-color:#38b6e0;
+	color: white;
+}
+#enter:active{
+	background-color:#0e86ad;
+	border:solid 2px #0e86ad;
+}
+/* buradan --------------------------------------------------*/
+#ayarlar-span{
+	text-align: center;
+	height: 57px;
+}
+#ayarlar{
+	display: flex;
+	align-items: center;
+	height:40px;
+	transition: all 0.5s;
+}
+#ayarlarTıklanınca{
+	display: flex;
+	align-items: center;
+	height:40px;
+	transition: all 0.5s;
+	transform: rotate(100deg);
+}
+/* buraya  -------------------------------------------------*/
+.minik{
+	margin-left: 5px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding-top: 10px;
+	width: 56px;
+	height:33px;
+	border:solid 2px #38b6e0;
+	background-color: white;
+	border-radius: 5px;
+	color: #38b6e0;
+	font-size: 30px
+}
+#yuzde{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding-top: 10px;
+	width: 56px;
+	height:33px;
+	border:solid 2px #38b6e0;
+	background-color: white;
+	border-radius: 5px;
+	color: #38b6e0;
+	font-size: 25px;
+	margin-left: 5px;
+}
+#dogruluk{
+	display: flex;
+	justify-content: center;
+	align-items: ;
+	padding: 0px 2px 0px 2px;
+	width: 70px;
+	height:43px;
+	border:solid 2px #38b6e0;
+	background-color: white;
+	border-radius: 5px;
+	color: #38b6e0;
+	font-size: 25px;
+	margin-left: 5px;
+
+}
+#yazi{
+	font-family: 'Baloo Tammudu 2', cursive;
+	overflow: hidden;
+	color:#111111;
+	font-size: 1.7em;
+	line-height: 1.7em;
+	border:solid 2px #38b6e0;
+	height: 95px;
+	width: 600px;
+	margin: 15px 0px 15px 0px;
+	border-radius: 5px;
+}
+#input2{
+	width: 386px;
+}
+#blankSpace{
+	z-index: 5;
+	height: 50px;
+	width: 150px;
+	left:430px;
+	background-color: white;
+	position:absolute;
+	transition: all 1s;
+	display: initial;
+	opacity: 1; /* 0 olacak*/
+}

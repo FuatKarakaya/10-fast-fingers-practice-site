@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>10parmak</title>
+  <link href="https://fonts.googleapis.com/css2?family=Baloo+Tammudu+2&display=swap" rel="stylesheet"> 
+  <link rel="stylesheet" type="text/css" href="fuat-style.css">
+  <link rel="icon" href="myicon.ico">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script src="https://kit.fontawesome.com/3e0a05992a.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <div class="container">
+    <div id="top">
+
+    	<input  id="harfler" type="text" placeholder="Alıştıma yapmak istediğiniz harfleri giriniz">
+    	<button id="enter">enter</button>
+    	
+    	<div id="ayarlar">
+  	  <span id="ayarlar-span" style="font-size: 35px; color: #38b6e0;">
+  	    <i class="fas fa-cog"></i>
+  	  </span>
+   	</div>
+   	<div id="blankSpace">
+   		<img height="100%" width="100%" src="suqare.png"><!-- beyaz radyoDiv üzerini örtüyor-->
+   	</div>
+  	<div id="radioDiv">
+  	 	<label id="firstLabel">
+  	    	<input type="radio" class="inputRadio" id="karisik" name="ayarlar"/>
+  	 		Karışık
+  	 		<span></span>
+  	 	</label>
+
+  	 	<label id="secondLabel">
+  	 		<input type="radio" checked="checked" class="inputRadio" id="anlamli" name="ayarlar"/>
+  	 		Anlamlı
+  	 		<span></span>
+  		</label>
+  	</div>
+    </div>
+    <div id="yazi"></div>
+    <div id="bottom">
+    	<input id="input2" type="text" autocomplete="off">
+    	<div class="minik">60</div>
+    	<div id="yuzde">%100</div>
+    	<div id="dogruluk">0DKS</div>
+    </div>
+  </div>
+  <script type="text/javascript" src="fuat-onparmak.js"></script>
+  <script type="text/javascript" src="ayarlar.js"></script>
+  <!--<script type="text/javascript" src="fuat-onparmak2.js"></script>   sanırım önemsiz--> 
+</body>
+</html>
